@@ -1,0 +1,65 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Alone in the Dark: The New Nightmare"
+id = "SLES-02801"
+players = 1
+exe = "disc/SLES_028.01"
+discs = [
+    "disc/disc1.cue",
+    "disc/disc2.cue",
+]
+disc_serials = [
+    "SLES-02801",
+    "SLES-12801",
+]
+load_address = "0x80010000"
+entry_pc = "0x800237E0"
+text_size = "0x000B3800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "disc1.bin"
+cue_name = "disc1.cue"
+boot_exe = "SLES_028.01"
+known_sizes = [645019536]
+known_md5 = [
+  "0cc3590cb32cb7e28db0d3edbea9c0bb",
+]
+known_sha1 = [
+  "77bf47a7530883dacd3b071dd1eb8f2c2a4de0a2",
+]
+known_crc32 = [
+  "81fd5df0",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+strict = true
+
+[runtime]
+window_title = "Alone in the Dark: The New Nightmare Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+required_disc_fps = [
+    "0b260cf66663d48ae9bfa308722d97952d4510fd0e971513f2db2b54aa67802f",
+    "3ab3476080200fdefca34b05627929b859996e87c3557af84f9930cb391c4615",
+]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "0b260cf66663d48ae9bfa308722d97952d4510fd0e971513f2db2b54aa67802f"

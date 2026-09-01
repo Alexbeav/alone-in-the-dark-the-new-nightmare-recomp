@@ -1,0 +1,29 @@
+{
+  "cue_path": "disc1.cue",
+  "cue_name": "disc1.cue",
+  "bin_name": "disc1.bin",
+  "track_count": 2,
+  "data_track_size": 645019536,
+  "data_track_md5": "0cc3590cb32cb7e28db0d3edbea9c0bb",
+  "data_track_sha1": "77bf47a7530883dacd3b071dd1eb8f2c2a4de0a2",
+  "data_track_crc32": "81fd5df0",
+  "boot_exe": "SLES_028.01",
+  "serial": "SLES-02801",
+  "serial_exe": "SLES_028.01",
+  "volume_id": "AITD4_CD1",
+  "display_name": "Alone in the Dark: The New Nightmare",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800237E0",
+  "text_size": "0x000B3800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "0b260cf66663d48ae9bfa308722d97952d4510fd0e971513f2db2b54aa67802f",
+  "boot_exe_sha256": "d93b81e7fc004a59834e14088b7cfbe6bac1ee53daa22823744b6631609743c6",
+  "seed_count": 2257,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
