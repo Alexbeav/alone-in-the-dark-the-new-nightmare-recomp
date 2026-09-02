@@ -25,14 +25,17 @@ out_dir = "disc"
 bin_name = "disc1.bin"
 cue_name = "disc1.cue"
 boot_exe = "SLES_028.01"
-known_sizes = [645019536]
+known_sizes = [605317776, 645019536]
 known_md5 = [
+  "e1e8961f76647d00ea5ba93aa0951b6c",
   "0cc3590cb32cb7e28db0d3edbea9c0bb",
 ]
 known_sha1 = [
+  "270c9d9977a859e0f59e82cf9f3acd9de457f453",
   "77bf47a7530883dacd3b071dd1eb8f2c2a4de0a2",
 ]
 known_crc32 = [
+  "4ad56e6a",
   "81fd5df0",
 ]
 

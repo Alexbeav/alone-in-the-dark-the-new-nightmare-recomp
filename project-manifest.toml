@@ -38,11 +38,11 @@ repository = "https://github.com/TechnicallyComputers/retcomm-studio"
 commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
 
 [release]
-version = "0.3.3"
+version = "0.3.4"
 platform = "windows-x64"
 graduation_state = "bootstrap_verified"
 private_gameplay_confirmed = true
-public_package_status = "local_candidate_audited"
+public_package_status = "v0.3.4_disc_identity_release"
 setup_package_audit_failures = 0
 cleanroom_runtime_sha256 = "A7C3B8AC7B8A605609473354D994334D00A2EF431BDF69A7F8C5F5A0E9AF0CD8"
 disc_1_headless_boot_frames = 693

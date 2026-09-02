@@ -1,9 +1,9 @@
 # Alone in the Dark: The New Nightmare knowledge report
 
-- Date: 2026-09-01
+- Date: 2026-09-02
 - Retail identity: Europe `SLES-02801` and `SLES-12801`
 - Architecture lane: source-only owned-input setup host
-- Release target: Windows x64, version `0.3.3`
+- Release target: Windows x64, version `0.3.4`
 
 ## Current state
 
@@ -19,6 +19,11 @@ exact-ZIP runtime matched those bytes. Headless Disc 1 startup reached frame
 1934. Disc 2 reached frame 1920. Both runs used SCPH-5552 and reported no fatal
 event. The operator previously confirmed gameplay on the private build.
 Connected in-game disc change remains open.
+
+Release `v0.3.4` corrects the setup identity from the merged Disc 1 BIN to the
+canonical split Track 01. The merged identity remains accepted. Disc 2 keeps
+its existing serial and table-of-contents identity, and both owned canonical
+discs are release-test inputs.
 
 ## Release controls
 

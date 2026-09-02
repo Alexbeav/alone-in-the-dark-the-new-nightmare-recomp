@@ -101,7 +101,7 @@ in release CI.
 
 ## Platform support
 
-Release 0.3.3 supports Windows x64. Linux and macOS remain in the workflow,
+Release 0.3.4 supports Windows x64. Linux and macOS remain in the workflow,
 but their release jobs are deferred under the Wave 2 Windows-first exception.
 
 ## Multi-disc status
@@ -109,6 +109,10 @@ but their release jobs are deferred under the Wave 2 Windows-first exception.
 Both supported discs contain the same executable. The setup host validates and
 remembers both images. Each disc passed an independent startup test. A natural
 in-game disc change still needs a connected manual gameplay test.
+
+Release `v0.3.4` validates the canonical split Track 01 identity for Disc 1.
+It keeps the old merged whole-disc identity for compatibility. Disc 2 keeps its
+separate serial and table-of-contents identity in the runtime roster.
 
 ## License boundary
 

@@ -1,5 +1,13 @@
 # Development log
 
+## 2026-09-02: canonical multi-track Disc 1 identity
+
+The public `v0.3.3` manifest used the merged whole-disc BIN identity, while
+the setup verifier hashes Track 01. Release `v0.3.4` uses the canonical Track
+01 identity and keeps the merged identity as a compatibility entry. Disc 2
+keeps its separate serial and table-of-contents identity. Exact-package gates
+cover both canonical discs and a wrong-disc rejection.
+
 ## 2026-09-01: deterministic Windows link
 
 Repeated MinGW links changed 16 bytes in the product executable. The changes

@@ -20,10 +20,11 @@
     ],
     "require_cue": true,
     "data_track": {
-      "size": 645019536,
-      "md5": "0cc3590cb32cb7e28db0d3edbea9c0bb",
-      "sha1": "77bf47a7530883dacd3b071dd1eb8f2c2a4de0a2",
-      "crc32": "81fd5df0"
+      "size": 605317776,
+      "md5": "e1e8961f76647d00ea5ba93aa0951b6c",
+      "sha1": "270c9d9977a859e0f59e82cf9f3acd9de457f453",
+      "sha256": "2d9ff4f66bdce5d1097f0530261f4916984ad90c3061222112bf27e1bacc93d9",
+      "crc32": "4ad56e6a"
     },
     "disc_fp": "0b260cf66663d48ae9bfa308722d97952d4510fd0e971513f2db2b54aa67802f"
   },
